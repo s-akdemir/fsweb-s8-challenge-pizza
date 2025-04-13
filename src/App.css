@@ -1,42 +1,152 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* GENEL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: #fafafa;
+}
+
+/* ANA SAYFA HEADER */
+.header {
+  width: 100vw;
+  height: 100vh;
+  background: center / cover no-repeat url("../images/iteration-1-images/home-banner.png");
+}
+
+/* HEADER YAZI GRUBU */
+.head {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 40px;
+  padding: 50px;
+  font-family: "Quattrocento", serif;
+  font-size: 3rem;
+  color: white;
+}
+
+.head-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.head-text {
+  color: #FDC913;
+  font-family: "Satisfy", cursive;
+  font-size: 3rem;
+  margin: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wrapped-text {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 200;
+  font-size: 3rem;
+  color: #FAF7F2;
+  margin: 0 0 20px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* CTA BUTON */
+.button {
+  text-decoration: none;
+  border-radius: 30px;
+  background-color: #FDC913;
+  padding: 15px 45px;
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  color: black;
+  transition: background-color 0.3s ease;
 }
 
-.card {
-  padding: 2em;
+.button:hover {
+  background-color: #e4b812;
 }
 
-.read-the-docs {
-  color: #888;
+/* SABİT ÜST BANNER */
+.order-pizza-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  font-family: "Quattrocento", serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #CE2829;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
+
+/* FORM KAPSAYICI */
+.order-pizza {
+  margin-top: 200px;
+  padding-top: 400px; /* header alanı kadar boşluk bırak */
+  padding-bottom: 60px;
+  padding-left: 400px;
+  padding-right: 400px; 
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+/* FORM BLOĞU */
+.order-pizza-grid {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FAF7F2;
+  padding: 40px 100px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  color: #292929;
+}
+
+/* FORM ALANLARI */
+.order-pizza-grid-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #FAF7F2;
+  border-radius: 8px;
+}
+
+.order-pizza-grid-item-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;  
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #FAF7F2;
+  border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
